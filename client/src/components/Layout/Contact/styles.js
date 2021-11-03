@@ -1,20 +1,22 @@
 import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
+  form: {
+    backgroundColor: 'rgba(255, 255, 128, .5)',
+    maxWidth: '60rem',
+    textAlign: 'center',
+    alignItems: 'center',
+    margin: 'auto',
+    border: '2px solid red',
+    marginTop: '5rem',
+  },
   paper: {
-    marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    margin: '10rem',
+    margin: '5rem',
   },
   formId: {
     display: 'flex',
     flexDirection: 'column',
-    maxWidth: '50rem',
     textAlign: 'center',
-    justifyContent: 'center',
-    marginTop: theme.spacing(6),
   },
   submit: {
     margin: 'auto',

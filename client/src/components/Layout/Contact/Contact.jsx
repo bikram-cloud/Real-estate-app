@@ -38,65 +38,67 @@ const Contact = () => {
   };
 
   return (
-    <Container maxWidth="lg" disableGutters="true">
+    <div className={classes.form}>
       <CssBaseline />
-      <div className={classes.paper}>
-        <Typography variant="h6" style={{ fontWeight: 'bold' }}>
-          IF YOU HAVE ANY QUESTIONS OR REQUESTS FOR MATERIALS, PLEASE FILL OUT
-          THE FORM
-        </Typography>
-        <form className={classes.formId} onSubmit={formSubmit}>
-          <TextField
-            value={name}
-            variant="outlined"
-            label="Name"
-            fullWidth
-            required
-            style={{ marginBottom: '1rem' }}
-            onChange={nameUpdate}
-          />
-          <TextField
-            value={email}
-            variant="outlined"
-            label="Email"
-            fullWidth
-            required
-            style={{ marginBottom: '1rem' }}
-            onChange={emailUpdate}
-          />
-          <TextField
-            value={subject}
-            variant="outlined"
-            label="Subject"
-            fullWidth
-            required
-            style={{ marginBottom: '1rem' }}
-            onChange={subjectUpdate}
-          />
-          <TextField
-            value={comment}
-            id="outlined-multiline-static"
-            label="Comment"
-            required
-            multiline
-            rows={8}
-            variant="outlined"
-            style={{ marginBottom: '1rem' }}
-            onChange={commentUpdate}
-          />
-          <Button
-            type="submit"
-            value="button"
-            variant="contained"
-            color="primary"
-            type="submit"
-            size="small"
-            className={classes.submit}>
-            SUBMIT
-          </Button>
-        </form>
-      </div>
-    </Container>
+      <Container maxWidth="lg" disableGutters="true">
+        <div className={classes.paper}>
+          <Typography variant="h6" style={{ fontWeight: 'bold' }}>
+            IF YOU HAVE ANY QUESTIONS OR REQUESTS FOR MATERIALS, PLEASE FILL OUT
+            THE FORM
+          </Typography>
+          <form className={classes.formId} onSubmit={formSubmit}>
+            <TextField
+              value={name}
+              variant="outlined"
+              label="Name"
+              fullWidth
+              required
+              style={{ marginBottom: '1rem' }}
+              onChange={nameUpdate}
+            />
+            <TextField
+              value={email}
+              variant="outlined"
+              label="Email"
+              fullWidth
+              required
+              style={{ marginBottom: '1rem' }}
+              onChange={emailUpdate}
+            />
+            <TextField
+              value={subject}
+              variant="outlined"
+              label="Subject"
+              fullWidth
+              required
+              style={{ marginBottom: '1rem' }}
+              onChange={subjectUpdate}
+            />
+            <TextField
+              value={comment}
+              id="outlined-multiline-static"
+              label="Comment"
+              required
+              multiline
+              rows={8}
+              variant="outlined"
+              style={{ marginBottom: '1rem' }}
+              onChange={commentUpdate}
+            />
+            <Button
+              type="submit"
+              value="button"
+              variant="contained"
+              color="primary"
+              type="submit"
+              size="small"
+              className={classes.submit}>
+              SUBMIT
+            </Button>
+          </form>
+        </div>
+      </Container>
+    </div>
   );
 };
 
